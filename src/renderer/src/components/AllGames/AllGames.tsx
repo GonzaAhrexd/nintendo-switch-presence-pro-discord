@@ -12,21 +12,16 @@ const AllGames: React.FC = () => {
 
 
 
-  const handleCardClick = async (game: Game) => {
+  const handleCardClick = (game: Game) => {
+    console.log("Click en juego:", game);
+    // Enviar evento al backend para actualizar el presence
+    // window.electron.ipcRenderer.send('game', game.name, '', game.name === 'Custom' ? 'Custom Game' : '');
     // @ts-ignore
-    const result = await window.electronAPI.setDiscordPresence({
-      clientId: '647244885203877901',
-      details: 'Playing from React',
-      state: `Playing: ${game.name}`,
-      largeImageKey: game.img || 'nintendo_switch_logo',
-      largeImageText: game.name,
-      startTimestamp: Date.now()
-    })
-    if (result.success) {
-      alert('Presence updated successfully')
-    } else {
-      alert('Error: ' + result.error)
-    }
+    window.electronAPI.sendGame(
+      game.name,
+      '',
+      game.name === 'Custom' ? 'Custom Game' : ''
+    )
   }
 
   return (

@@ -1,25 +1,9 @@
-import { contextBridge } from 'electron'
-import { electronAPI } from '@electron-toolkit/preload'
+import { contextBridge, ipcRenderer } from 'electron'
 
-// Custom APIs for renderer
-// Expone setDiscordPresence directamente en window.electronAPI para uso en React
 contextBridge.exposeInMainWorld('electronAPI', {
-  ...electronAPI,
-  setDiscordPresence: (presence) => electronAPI.ipcRenderer.invoke('discord-set-presence', presence),
-  saveSettings: (settings) => electronAPI.ipcRenderer.invoke('save-settings', settings),
-  loadSettings: () => electronAPI.ipcRenderer.invoke('load-settings')
-})
+  sendGame: (game: string, status: string, customGame: string) =>
+    ipcRenderer.send('game', game, status, customGame),
 
-// Use `contextBridge` APIs to expose Electron APIs to
-// renderer only if context isolation is enabled, otherwise
-// just add to the DOM global.
-if (process.contextIsolated) {
-  try {
-    contextBridge.exposeInMainWorld('electron', electronAPI)
-  } catch (error) {
-    console.error(error)
-  }
-} else {
-  // @ts-ignore (define in dts)
-  window.electron = electronAPI
-}
+  sendIdle: (clicks: number) =>
+    ipcRenderer.send('idle', clicks)
+})
