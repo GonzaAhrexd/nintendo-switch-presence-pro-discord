@@ -6,7 +6,8 @@ import { electronAPI } from '@electron-toolkit/preload'
 contextBridge.exposeInMainWorld('electronAPI', {
   ...electronAPI,
   setDiscordPresence: (presence) => electronAPI.ipcRenderer.invoke('discord-set-presence', presence),
-  saveSettings: (settings) => electronAPI.ipcRenderer.invoke('save-settings', settings)
+  saveSettings: (settings) => electronAPI.ipcRenderer.invoke('save-settings', settings),
+  loadSettings: () => electronAPI.ipcRenderer.invoke('load-settings')
 })
 
 // Use `contextBridge` APIs to expose Electron APIs to
@@ -15,13 +16,10 @@ contextBridge.exposeInMainWorld('electronAPI', {
 if (process.contextIsolated) {
   try {
     contextBridge.exposeInMainWorld('electron', electronAPI)
-    contextBridge.exposeInMainWorld('api', api)
   } catch (error) {
     console.error(error)
   }
 } else {
   // @ts-ignore (define in dts)
   window.electron = electronAPI
-  // @ts-ignore (define in dts)
-  window.api = api
 }

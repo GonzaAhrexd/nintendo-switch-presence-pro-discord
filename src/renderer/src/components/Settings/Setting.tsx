@@ -14,40 +14,12 @@ const Setting: React.FC = () => {
   const [pendingDarkMode, setPendingDarkMode] = useState(darkMode)
   const [applied, setApplied] = useState(false)
 
-  React.useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [darkMode])
 
   const handleApply = async () => {
-    setLanguage(pendingLanguage)
-    setDarkMode(pendingDarkMode)
-    setApplied(true)
-    // Directly update settings.json in the renderer (Electron context only)
-    try {
-      // @ts-ignore
-      const fs = window.require ? window.require('fs') : null
-      // @ts-ignore
-      const path = window.require ? window.require('path') : null
-      if (fs && path) {
-        const settingsPath = path.join(__dirname, '../../../settings.json')
-        const newSettings = {
-          language: pendingLanguage,
-          darkMode: pendingDarkMode
-        }
-        fs.writeFileSync(settingsPath, JSON.stringify(newSettings, null, 2), 'utf-8')
-      } else {
-        alert('Direct file system access is only available in Electron renderer process.')
-      }
-    } catch (e) {
-      alert('Failed to write settings.json: ' + e)
-    }
-    setTimeout(() => setApplied(false), 1200)
+
   }
 
+  
   return (
     <div className="max-w-md mx-auto mt-8 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-sm transition-colors">
       <h2 className="text-lg font-semibold mb-4 text-zinc-800 dark:text-zinc-100">Settings</h2>
