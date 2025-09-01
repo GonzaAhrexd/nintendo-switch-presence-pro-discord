@@ -2,7 +2,7 @@
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
-const rpc = require("discord-rich-presence")("647244885203877901");
+const rpc = require("discord-rich-presence")("1409736895440621610");
 import gameData from "../games.json"
 
 let window 
