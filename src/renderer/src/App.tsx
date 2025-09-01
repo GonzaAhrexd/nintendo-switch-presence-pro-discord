@@ -21,13 +21,13 @@ function App(): React.JSX.Element {
   const [language, setLanguage] = useState('en')
   return (
     <>
-        <div className={`min-h-screen w-screen overflow-x-hidden ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
+        <div className={`min-h-screen max-w-screen w-screen overflow-x-hidden ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
       <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className={`pt-14 `}>
+      <div className={`pt-14`}>
         {activeTab === 0 && <AllGames /> }
-        {activeTab === 1 && <div>Contenido de Favoritos</div>}
-        {activeTab === 2 && <div>Contenido de Mis juegos</div>}
-        {activeTab === 3 && <Setting />}
+        {/* {activeTab === 1 && <div>Contenido de Favoritos</div>}
+        {activeTab === 2 && <div>Contenido de Mis juegos</div>} */}
+        {activeTab === 2 && <Setting />}
       </div>
     </div>
     </>

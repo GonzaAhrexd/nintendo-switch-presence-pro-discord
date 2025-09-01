@@ -4,7 +4,7 @@ import { HomeIcon, StarIcon, Cog6ToothIcon } from '@heroicons/react/24/outline'
 const navItems = [
   { label: 'All Games', icon: HomeIcon },
   { label: 'Favorites', icon: StarIcon },
-  { label: 'My Games', icon: StarIcon },
+  // { label: 'My Games', icon: StarIcon },
   { label: 'Settings', icon: Cog6ToothIcon }
 ]
 
@@ -20,7 +20,7 @@ type NavBarProps = {
 const NavBar: React.FC<NavBarProps> = ({activeTab, setActiveTab}) => {
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 shadow-md ${accentBg}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 shadow-md overflow-x-hidden ${accentBg}`}>
       <ul className="flex justify-center gap-2 md:gap-6 px-2 md:px-0 py-2">
         {navItems.map((item, idx) => {
           const Icon = item.icon

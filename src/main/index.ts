@@ -9,8 +9,8 @@ let window
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
+    width: 1920,
+    height: 1080,
     show: false,
     autoHideMenuBar: true,
     webPreferences: {
@@ -22,7 +22,7 @@ function createWindow(): void {
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
-    mainWindow.webContents.openDevTools({ mode: 'detach' })
+    // mainWindow.webContents.openDevTools({ mode: 'detach' })
   })
 
   

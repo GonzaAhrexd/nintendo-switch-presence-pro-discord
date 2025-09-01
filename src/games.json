@@ -1,12 +1,12 @@
 [
   {"name" : "Home", "img" : "switch", "franchise": "System"},
-  {"name" : "Custom", "img" : "switch", "franchise": "System"},
 
   {"name" : "Advance Wars 1+2 Re-Boot Camp", "img" : "advwars", "franchise": "Advance Wars"},
   {"name" : "Animal Crossing: New Horizons", "img" : "animalcrossing", "franchise": "Animal Crossing"},
   {"name" : "Arms", "img" : "arms", "franchise": "ARMS"},
   {"name" : "Astral Chain", "img" : "astral", "franchise": "Astral Chain"},
 
+  {"name" : "Bayonetta", "img" : "bayonet", "franchise": "Bayonetta"},
   {"name" : "Bayonetta 2", "img" : "bayonet2", "franchise": "Bayonetta"},
   {"name" : "Bayonetta 3", "img" : "bayonet3", "franchise": "Bayonetta"},
   {"name" : "Bayonetta Origins: Cereza and the Lost Demon", "img" : "bayoneto", "franchise": "Bayonetta"},
@@ -40,7 +40,8 @@
   {"name" : "Super Kirby Clash", "img" : "kirbyclash", "franchise": "Kirby"},
   {"name" : "Kirby Air Riders", "img" : "kirbyair", "franchise": "Kirby"},
 
-  {"name" : "Luigi's Mansion 3", "img" : "luigiman", "franchise": "Mario"},
+  {"name" : "Luigi's Mansion 2", "img" : "luigiman2", "franchise": "Mario"},
+  {"name" : "Luigi's Mansion 3", "img" : "luigiman3", "franchise": "Mario"},
   {"name" : "Mario & Luigi: Brothership", "img" : "marioluigi", "franchise": "Mario"},
   {"name" : "Mario Kart 8 Deluxe", "img" : "mk8d", "franchise": "Mario"},
   {"name" : "Mario Kart World", "img" : "mkworld", "franchise": "Mario"},
@@ -49,71 +50,73 @@
   {"name" : "Mario Tennis Aces", "img" : "mariotennis", "franchise": "Mario"},
   {"name" : "New Super Mario Bros. U Deluxe", "img" : "nsmbud", "franchise": "Mario"},
   {"name" : "Paper Mario: The Origami King", "img" : "origami", "franchise": "Mario"},
+  { "name": "Paper Mario: The Thousand-Year Door", "img": "pmtyd", "franchise": "Mario" },
   {"name" : "Super Mario 3D All-Stars", "img" : "allstars", "franchise": "Mario"},
   {"name" : "Super Mario 3D World + Bowser's Fury", "img" : "bowserfury", "franchise": "Mario"},
   {"name" : "Super Mario Bros. Wonder", "img" : "mariowonder", "franchise": "Mario"},
-  {"name" : "Super Mario Maker 2", "img" : "smm2", "franchise": "Mario"},
+  {"name" : "Super Mario Maker 2", "img" : "sm2", "franchise": "Mario"},
   {"name" : "Super Mario Odyssey", "img" : "smo", "franchise": "Mario"},
   {"name" : "Super Mario Party", "img" : "smp", "franchise": "Mario"},
   {"name" : "Super Mario Party Jamboree", "img" : "smpj", "franchise": "Mario"},
-  {"name" : "Hello, Mario!", "img" : "hellomario", "franchise": "Mario"},
-
+  {"name": "Mario VS Donkey Kong", "img": "mvsdk", "franchise": "Mario"},
+  
   {"name" : "Metroid Dread", "img" : "metroiddrd", "franchise": "Metroid"},
   {"name" : "Metroid Prime Remastered", "img" : "primeremastered", "franchise": "Metroid"},
-  {"name" : "Metroid Prime 4: Beyond", "img" : "metroidprime4", "franchise": "Metroid"},
 
   {"name" : "Miitopia", "img" : "miitopia", "franchise": "Mii"},
-  {"name" : "New Pokémon Snap", "img" : "pkmnsnap", "franchise": "Pokémon"},
   {"name" : "Nintendo Switch Sports", "img" : "switchsports", "franchise": "Sports"},
   {"name" : "Part Time UFO", "img" : "ptufo", "franchise": "Other"},
-  {"name" : "Nintendo Today!", "img" : "nintendotoday", "franchise": "Other"},
   {"name" : "Drag x Drive", "img" : "dragxdrive", "franchise": "Other"},
 
-  {"name" : "Pikmin 3 Deluxe", "img" : "pikmin", "franchise": "Pikmin"},
+  {"name": "Pikmin 1", "img": "pikmin1", "franchise": "Pikmin"},
+  { "name": "Pikmin2", "img": "pikmin2", "franchise": "Pikmin" },
+  {"name" : "Pikmin 3 Deluxe", "img" : "pikmin3", "franchise": "Pikmin"},
   {"name" : "Pikmin 4", "img" : "pikmin4", "franchise": "Pikmin"},
-
-  {"name" : "Pokémon Brilliant Diamond", "img" : "pkmdmnd", "franchise": "Pokémon"},
+  
   {"name" : "Pokémon Home", "img" : "pkmhome", "franchise": "Pokémon"},
-  {"name" : "Pokémon Legends: Arceus", "img" : "pkmnlegends", "franchise": "Pokémon"},
-  {"name" : "Pokémon Legends: Z-A", "img" : "pkmnza", "franchise": "Pokémon"},
-  {"name" : "Pokémon: Let's Go Eevee", "img" : "pkmneevee", "franchise": "Pokémon"},
   {"name" : "Pokémon: Let's Go Pikachu", "img" : "pkmnpikachu", "franchise": "Pokémon"},
-  {"name" : "Pokémon Mystery Dungeon: Rescue Team DX", "img" : "pkmnrescue", "franchise": "Pokémon"},
-  {"name" : "Pokémon Scarlet", "img" : "pkmnscarlet", "franchise": "Pokémon"},
-  {"name" : "Pokémon Shield", "img" : "pkmnshield", "franchise": "Pokémon"},
-  {"name" : "Pokémon Shining Pearl", "img" : "pkmperl", "franchise": "Pokémon"},
+  {"name" : "Pokémon: Let's Go Eevee", "img" : "pkmneevee", "franchise": "Pokémon"},
   {"name" : "Pokémon Sword", "img" : "pkmnsword", "franchise": "Pokémon"},
-  {"name" : "Pokémon UNITE", "img" : "pkmnunite", "franchise": "Pokémon"},
+  {"name" : "Pokémon Shield", "img" : "pkmnshield", "franchise": "Pokémon"},
+  {"name" : "Pokémon Brilliant Diamond", "img" : "pkmdmnd", "franchise": "Pokémon"},
+  {"name" : "Pokémon Shining Pearl", "img" : "pkmperl", "franchise": "Pokémon"},
+  {"name" : "Pokémon Legends: Arceus", "img" : "pkmnarceus", "franchise": "Pokémon"},
+  {"name" : "Pokémon Scarlet", "img" : "pkmnscarlet", "franchise": "Pokémon"},
   {"name" : "Pokémon Violet", "img" : "pkmnviolet", "franchise": "Pokémon"},
+  {"name" : "Pokémon Legends: Z-A", "img" : "pkmnza", "franchise": "Pokémon"},
+  {"name" : "Pokémon Mystery Dungeon: Rescue Team DX", "img" : "pkmnrescue", "franchise": "Pokémon"},
+  {"name" : "New Pokémon Snap", "img" : "pkmnsnap", "franchise": "Pokémon"},
+  {"name" : "Pokémon UNITE", "img" : "pkmnunite", "franchise": "Pokémon"},
 
   {"name" : "Ring Fit Adventure", "img" : "ringfit", "franchise": "Fitness"},
   {"name" : "Snipperclips", "img" : "snipper", "franchise": "Snipperclips"},
 
-  {"name" : "Splatoon", "img" : "splattim", "franchise": "Splatoon"},
-  {"name" : "Splatoon 2", "img" : "splattimreloaded", "franchise": "Splatoon"},
-  {"name" : "Splatoon 3", "img" : "splattiminfinitywar", "franchise": "Splatoon"},
-  {"name" : "Splatoon Raiders", "img" : "splatoonraiders", "franchise": "Splatoon"},
+  {"name" : "Splatoon 2", "img" : "splatoon2", "franchise": "Splatoon"},
+  {"name" : "Splatoon 3", "img" : "splatoon3", "franchise": "Splatoon"},
 
   {"name" : "Super Nintendo Entertainment System", "img" : "snes", "franchise": "System"},
   {"name" : "Nintendo Entertainment System", "img" : "nes", "franchise": "System"},
   {"name" : "Nintendo 64", "img" : "n64", "franchise": "System"},
-
+  {"name": "Nintendo Game Boy", "img": "gameboy", "franchise": "System"},
+  { "name": "Nintendo Game Boy Advance", "img": "gameboyadvanced", "franchise": "System"},
+  { "name": "Nintendo Game Cube", "img": "gamecube", "franchise": "System"},
+  
   {"name" : "Super Smash Bros. Ultimate", "img" : "ssbu", "franchise": "Smash Bros"},
   {"name" : "Sushi Striker: The Way of the Sushido", "img" : "sushistriker", "franchise": "Other"},
 
   {"name" : "WarioWare: Get It Together!", "img" : "warioware", "franchise": "WarioWare"},
+  { "name": "WarioWare: Move It!", "img": "wariowaremoveit", "franchise": "WarioWare"},
 
   {"name" : "Xenoblade Chronicles Definitive Edition", "img" : "xcd", "franchise": "Xenoblade"},
   {"name" : "Xenoblade Chronicles 2", "img" : "xc2", "franchise": "Xenoblade"},
   {"name" : "Xenoblade Chronicles 3", "img" : "xc3", "franchise": "Xenoblade"},
-  {"name" : "Xenoblade Chronicles X", "img" : "xcx", "franchise": "Xenoblade"},
-  {"name" : "Xenoblade Chronicles X: Definitive Edition", "img" : "xcxdefinitive", "franchise": "Xenoblade"},
+  {"name" : "Xenoblade Chronicles X: Definitive Edition", "img" : "xcx", "franchise": "Xenoblade"},
 
   {"name" : "Yoshi's Crafted World", "img" : "yoshicraft", "franchise": "Yoshi"},
 
   {"name" : "The Legend of Zelda: Breath of the Wild", "img" : "botw", "franchise": "Zelda"},
+  {"name" : "The Legend of Zelda: Tears of the Kingdom", "img" : "totk", "franchise": "Zelda"},
   {"name" : "The Legend of Zelda: Echoes of Wisdom", "img" : "zeldaechoes", "franchise": "Zelda"},
   {"name" : "The Legend of Zelda: Link's Awakening", "img" : "linksawake", "franchise": "Zelda"},
-  {"name" : "The Legend of Zelda: Skyward Sword HD", "img" : "skyward", "franchise": "Zelda"},
-  {"name" : "The Legend of Zelda: Tears of the Kingdom", "img" : "totk", "franchise": "Zelda"}
+  {"name" : "The Legend of Zelda: Skyward Sword HD", "img" : "skyward", "franchise": "Zelda"}
 ]
