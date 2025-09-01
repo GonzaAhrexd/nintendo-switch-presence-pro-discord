@@ -15,7 +15,9 @@
   {"name" : "Cadence of Hyrule", "img" : "cadencehyrule", "franchise": "Zelda"},
   {"name" : "Captain Toad: Treasure Tracker", "img" : "captaintoad", "franchise": "Mario"},
   {"name" : "Clubhouse Games: 51 Worldwide Classics", "img" : "clubhouse", "franchise": "Other"},
-  {"name" : "Donkey Kong Country: Tropical Freeze", "img" : "dankeykang", "franchise": "Donkey Kong"},
+  {"name" : "Donkey Kong Country: Tropical Freeze", "img" : "donkeykong", "franchise": "Donkey Kong"},
+  {"name" : "Donkey Kong Country Returns HD", "img" : "dkreturns", "franchise": "Donkey Kong"},
+  {"name" : "Donkey Kong Bananza", "img" : "dkbananza", "franchise": "Donkey Kong"},
   {"name" : "Dr. Kawashima's Brain Training", "img" : "brainlet", "franchise": "Brain Training"},
 
   {"name" : "Fire Emblem Engage", "img" : "feengage", "franchise": "Fire Emblem"},
@@ -25,19 +27,23 @@
 
   {"name" : "Fitness Boxing", "img" : "fitbox", "franchise": "Fitness Boxing"},
   {"name" : "Fitness Boxing 2: Rhythm & Exercise", "img" : "fitbox2", "franchise": "Fitness Boxing"},
+  {"name" : "Fitness Boxing 3: Your Personal Trainer", "img" : "fitbox3", "franchise": "Fitness Boxing"},
 
   {"name" : "Hyrule Warriors: Age of Calamity", "img" : "calamity", "franchise": "Zelda"},
   {"name" : "Hyrule Warriors: Definitive Edition", "img" : "hyrulewar", "franchise": "Zelda"},
+  {"name" : "Hyrule Warriors: Age of Imprisonment", "img" : "hyruleimp", "franchise": "Zelda"},
 
   {"name" : "Kirby and the Forgotten Land", "img" : "kirbycar", "franchise": "Kirby"},
   {"name" : "Kirby's Dream Buffet", "img" : "dreambuffet", "franchise": "Kirby"},
   {"name" : "Kirby's Return to Dream Land ", "img" : "kirbydreamland", "franchise": "Kirby"},
   {"name" : "Kirby Star Allies", "img" : "kirbystar", "franchise": "Kirby"},
   {"name" : "Super Kirby Clash", "img" : "kirbyclash", "franchise": "Kirby"},
+  {"name" : "Kirby Air Riders", "img" : "kirbyair", "franchise": "Kirby"},
 
   {"name" : "Luigi's Mansion 3", "img" : "luigiman", "franchise": "Mario"},
   {"name" : "Mario & Luigi: Brothership", "img" : "marioluigi", "franchise": "Mario"},
   {"name" : "Mario Kart 8 Deluxe", "img" : "mk8d", "franchise": "Mario"},
+  {"name" : "Mario Kart World", "img" : "mkworld", "franchise": "Mario"},
   {"name" : "Mario Party Superstars", "img" : "mpartyss", "franchise": "Mario"},
   {"name" : "Mario Strikers Battle League", "img" : "mariostrikers", "franchise": "Mario"},
   {"name" : "Mario Tennis Aces", "img" : "mariotennis", "franchise": "Mario"},
@@ -50,14 +56,18 @@
   {"name" : "Super Mario Odyssey", "img" : "smo", "franchise": "Mario"},
   {"name" : "Super Mario Party", "img" : "smp", "franchise": "Mario"},
   {"name" : "Super Mario Party Jamboree", "img" : "smpj", "franchise": "Mario"},
+  {"name" : "Hello, Mario!", "img" : "hellomario", "franchise": "Mario"},
 
   {"name" : "Metroid Dread", "img" : "metroiddrd", "franchise": "Metroid"},
   {"name" : "Metroid Prime Remastered", "img" : "primeremastered", "franchise": "Metroid"},
+  {"name" : "Metroid Prime 4: Beyond", "img" : "metroidprime4", "franchise": "Metroid"},
 
   {"name" : "Miitopia", "img" : "miitopia", "franchise": "Mii"},
   {"name" : "New Pokémon Snap", "img" : "pkmnsnap", "franchise": "Pokémon"},
   {"name" : "Nintendo Switch Sports", "img" : "switchsports", "franchise": "Sports"},
   {"name" : "Part Time UFO", "img" : "ptufo", "franchise": "Other"},
+  {"name" : "Nintendo Today!", "img" : "nintendotoday", "franchise": "Other"},
+  {"name" : "Drag x Drive", "img" : "dragxdrive", "franchise": "Other"},
 
   {"name" : "Pikmin 3 Deluxe", "img" : "pikmin", "franchise": "Pikmin"},
   {"name" : "Pikmin 4", "img" : "pikmin4", "franchise": "Pikmin"},
@@ -65,6 +75,7 @@
   {"name" : "Pokémon Brilliant Diamond", "img" : "pkmdmnd", "franchise": "Pokémon"},
   {"name" : "Pokémon Home", "img" : "pkmhome", "franchise": "Pokémon"},
   {"name" : "Pokémon Legends: Arceus", "img" : "pkmnlegends", "franchise": "Pokémon"},
+  {"name" : "Pokémon Legends: Z-A", "img" : "pkmnza", "franchise": "Pokémon"},
   {"name" : "Pokémon: Let's Go Eevee", "img" : "pkmneevee", "franchise": "Pokémon"},
   {"name" : "Pokémon: Let's Go Pikachu", "img" : "pkmnpikachu", "franchise": "Pokémon"},
   {"name" : "Pokémon Mystery Dungeon: Rescue Team DX", "img" : "pkmnrescue", "franchise": "Pokémon"},
@@ -81,6 +92,7 @@
   {"name" : "Splatoon", "img" : "splattim", "franchise": "Splatoon"},
   {"name" : "Splatoon 2", "img" : "splattimreloaded", "franchise": "Splatoon"},
   {"name" : "Splatoon 3", "img" : "splattiminfinitywar", "franchise": "Splatoon"},
+  {"name" : "Splatoon Raiders", "img" : "splatoonraiders", "franchise": "Splatoon"},
 
   {"name" : "Super Nintendo Entertainment System", "img" : "snes", "franchise": "System"},
   {"name" : "Nintendo Entertainment System", "img" : "nes", "franchise": "System"},
@@ -95,6 +107,7 @@
   {"name" : "Xenoblade Chronicles 2", "img" : "xc2", "franchise": "Xenoblade"},
   {"name" : "Xenoblade Chronicles 3", "img" : "xc3", "franchise": "Xenoblade"},
   {"name" : "Xenoblade Chronicles X", "img" : "xcx", "franchise": "Xenoblade"},
+  {"name" : "Xenoblade Chronicles X: Definitive Edition", "img" : "xcxdefinitive", "franchise": "Xenoblade"},
 
   {"name" : "Yoshi's Crafted World", "img" : "yoshicraft", "franchise": "Yoshi"},
 

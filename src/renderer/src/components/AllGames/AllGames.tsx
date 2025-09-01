@@ -11,11 +11,11 @@ import games from '../../../../games.json'
 const AllGames: React.FC = () => {
   const [gameList] = useState<Game[]>(games);
   const [search, setSearch] = useState('');
-  const [franchise, setFranchise] = useState('Todas');
+  const [franchise, setFranchise] = useState('All');
 
   // Obtener lista única de franquicias
   const franchises = Array.from(new Set(gameList.map(g => g.franchise || ''))).filter(f => f).sort();
-  franchises.unshift('Todas');
+  franchises.unshift('All');
 
   const handleCardClick = (game: Game) => {
     console.log("Click en juego:", game);
@@ -32,7 +32,7 @@ const AllGames: React.FC = () => {
   // Filtrar juegos por nombre y franquicia
   const filteredGames = gameList.filter(game => {
     const matchesName = game.name.toLowerCase().includes(search.toLowerCase());
-    const matchesFranchise = franchise === 'Todas' || game.franchise === franchise;
+    const matchesFranchise = franchise === 'All' || game.franchise === franchise;
     return matchesName && matchesFranchise;
   });
 
@@ -44,7 +44,7 @@ const AllGames: React.FC = () => {
           type="text"
           value={search}
           onChange={e => setSearch(e.target.value)}
-          placeholder="Buscar juego..."
+          placeholder="Search game..."
           className="bg-zinc-800 rounded px-3 py-2 text-zinc-100 mb-3 w-full outline-none focus:ring-2 focus:ring-red-700"
         />
         <select

@@ -21,7 +21,7 @@ function App(): React.JSX.Element {
   const [language, setLanguage] = useState('en')
   return (
     <>
-        <div className={`min-h-screen w-screen ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
+        <div className={`min-h-screen w-screen overflow-x-hidden ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
       <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className={`pt-14 `}>
         {activeTab === 0 && <AllGames /> }
