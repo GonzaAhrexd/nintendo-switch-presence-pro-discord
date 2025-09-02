@@ -41,7 +41,7 @@ function createWindow(): void {
     height: 1080,
     show: false,
     autoHideMenuBar: true,
-      icon: join(__dirname, 'icon.png'), // <- SIN barra inicial
+  icon: join(app.getAppPath(), 'resources', 'icon.png'),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true,
