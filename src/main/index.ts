@@ -40,11 +40,11 @@ function createWindow(): void {
   setIdle();
 }
 
-let name;
-let customName;
-let desc;
-let img;
-let idle;
+let name: string;
+let customName: string;
+let desc: string;
+let img: string;
+let idle: number;
 
 // Executes when game data is recieved
 ipcMain.on("game", (e, game, status, customGame) => {
@@ -66,10 +66,10 @@ ipcMain.on("idle", (e, clicks) => {
 function setIdle() {
   console.log("Should work")
   if (idle === 16) return rpc.updatePresence({
-        details: "Yoshi's Fucking Island",
-        state: "ccomign This Sprign",
+        details: "IDLE",
+        state: "IDLE",
         largeImageKey: "yfi",
-        largeImageText: "he's sitting there.."});
+        largeImageText: "IDLE.."});
     rpc.updatePresence({
         details: "Home",
         state: "Idle",

@@ -27,6 +27,7 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/vite": "^4.1.12",
     "discord-rich-presence": "^0.0.8",
+    "electron-store": "^10.1.0",
     "electron-updater": "^6.3.9"
   },
   "devDependencies": {
