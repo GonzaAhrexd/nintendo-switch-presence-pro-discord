@@ -1,10 +1,10 @@
-import { DiscordPresenceButton } from './components/DiscordPresenceButton/DiscordPresenceButton'
 
 
 import NavBar from "./components/NavBar/NavBar"
 import { useState, useEffect } from 'react'
 import Setting from './components/Settings/Setting'
 import AllGames from './components/AllGames/AllGames'
+import FavoriteGames from './components/FavoriteGames/FavoriteGames'
 
 function App(): React.JSX.Element {
   const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
@@ -52,8 +52,7 @@ function App(): React.JSX.Element {
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} darkMode={darkMode} language={language}/>
         <div className={`pt-14`}>
           {activeTab === 0 && <AllGames darkMode={darkMode} language={language} />}
-          {/* {activeTab === 1 && <div>Contenido de Favoritos</div>}
-        {activeTab === 2 && <div>Contenido de Mis juegos</div>} */}
+          {activeTab === 1 && <FavoriteGames darkMode={darkMode} language={language} />}
           {activeTab === 2 && <Setting />}
         </div>
       </div>

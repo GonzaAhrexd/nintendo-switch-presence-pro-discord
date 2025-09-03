@@ -1,3 +1,4 @@
+
 import { app, shell, BrowserWindow, ipcMain, nativeTheme } from 'electron'
 import { join } from 'path'
 
@@ -7,6 +8,34 @@ const store = new ElectronStore.default({
     language: app.getLocale ? app.getLocale().split('-')[0] : 'en',
     darkMode: 'system'
   }
+})
+
+// Store para favoritos
+const favStore = new ElectronStore.default({
+  name: 'favorites',
+  defaults: {
+    favorites: []
+  }
+})
+// IPC: obtener favoritos
+ipcMain.handle('get-favorites', () => {
+  return favStore.get('favorites', [])
+})
+
+// IPC: agregar un favorito
+ipcMain.handle('add-favorite', (_event, game) => {
+  const current = favStore.get('favorites', [])
+  if (!current.includes(game)) {
+    favStore.set('favorites', [...current, game])
+  }
+  return favStore.get('favorites', [])
+})
+
+// IPC: quitar un favorito
+ipcMain.handle('remove-favorite', (_event, game) => {
+  const current = favStore.get('favorites', [])
+  favStore.set('favorites', current.filter((g) => g !== game))
+  return favStore.get('favorites', [])
 })
 
 function getUserConfig() {
