@@ -157,5 +157,21 @@
   { "name": "Hollow Knight", "img": "hollowknight", "franchise": "Hollow Knight", "console": "sw1" },
   { "name": "Hollow Knight: Silksong", "img": "silksong", "franchise": "Hollow Knight", "console": "sw1" },
 
-  { "name": "Cyberpunk 2077", "img": "cyberpunk", "franchise": "Cyberpunk", "console": "sw2" }
+  { "name": "Cyberpunk 2077", "img": "cyberpunk", "franchise": "Cyberpunk", "console": "sw2" },
+
+
+   { "name": "Persona 3 Portable", "img": "p3p", "franchise": "Persona", "console": "sw1" },
+   { "name": "Persona 3 Reload", "img": "p3r", "franchise": "Persona", "console": "sw2" },
+  { "name": "Persona 4 Golden", "img": "p4g", "franchise": "Persona", "console": "sw1" },
+  { "name": "Persona 5 Royal", "img": "p5r", "franchise": "Persona", "console": "sw1" },
+  { "name": "Persona 5 Strikers", "img": "p5s", "franchise": "Persona", "console": "sw1" },
+
+    { "name": "Monster Hunter Generations Ultimate", "img": "mhgu", "franchise": "Monster Hunter", "console": "sw1" },
+  { "name": "Monster Hunter Rise", "img": "mhrise", "franchise": "Monster Hunter", "console": "sw1" },
+  { "name": "Monster Hunter Stories", "img": "mhstories", "franchise": "Monster Hunter", "console": "sw1" },
+  { "name": "Monster Hunter Stories 2: Wings of Ruin", "img": "mhstories2", "franchise": "Monster Hunter", "console": "sw1" },
+
+    { "name": "Nier Automata: The End of Yorha Edition", "img": "nierauto", "franchise": "Nier", "console": "sw1" },
+    {"name": "Hogwarts Legacy", "img": "hogwarts", "franchise": "Harry Potter", "console": "sw1" }
+
 ]
