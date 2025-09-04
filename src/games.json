@@ -176,6 +176,9 @@
   {"name": "My Hero One's Justice 2", "img": "mhoj2", "franchise": "My Hero Academia"},
   { "name": "Demon Slayer: Kimetsu no Yaiba - The Hinokami Chronicles", "img": "demon-slayer", "franchise": "Demon Slayer"},
   { "name": "Demon Slayer: Kimetsu no Yaiba - The Hinokami Chronicles 2", "img": "demon-slayer2", "franchise": "Demon Slayer"},
-  { "name": "HUNTER×HUNTER NEN×IMPACT", "img": "hunterxhunter", "franchise": "HUNTER×HUNTER"}
+  { "name": "HUNTER×HUNTER NEN×IMPACT", "img": "hunterxhunter", "franchise": "HUNTER×HUNTER"},
+
+  { "name": "Hollow Knight", "img": "hollowknight", "franchise": "Hollow Knight" },
+  { "name": "Hollow Knight: Silksong", "img": "silksong", "franchise": "Hollow Knight" }
 
 ]

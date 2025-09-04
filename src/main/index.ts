@@ -1,6 +1,9 @@
 
 import { app, shell, BrowserWindow, ipcMain, nativeTheme } from 'electron'
 import { join } from 'path'
+import { is } from '@electron-toolkit/utils'
+const rpc = require('discord-rich-presence')('1409736895440621610')
+import gameData from '../games.json'
 
 const ElectronStore = require('electron-store')
 const store = new ElectronStore.default({
@@ -52,9 +55,6 @@ function applyDarkMode(win: BrowserWindow, mode: boolean | 'system') {
     win.webContents.send('theme-changed', !!mode)
   }
 }
-import { electronApp, optimizer, is } from '@electron-toolkit/utils'
-const rpc = require('discord-rich-presence')('1409736895440621610')
-import gameData from '../games.json'
 
 let window
 
