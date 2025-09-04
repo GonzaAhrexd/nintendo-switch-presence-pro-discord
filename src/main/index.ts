@@ -9,7 +9,8 @@ const ElectronStore = require('electron-store')
 const store = new ElectronStore.default({
   defaults: {
     language: app.getLocale ? app.getLocale().split('-')[0] : 'en',
-    darkMode: 'system'
+    darkMode: true,
+    showSwitch2Games: true
   }
 })
 
@@ -41,10 +42,19 @@ ipcMain.handle('remove-favorite', (_event, game) => {
   return favStore.get('favorites', [])
 })
 
+ipcMain.handle('set-show-switch2games', (_event, show: boolean) => {
+  store.set('showSwitch2Games', show)
+  if (mainWindow) mainWindow.webContents.send('showSwitch2Games-changed', show)
+  return { success: true }
+}
+
+)
+
 function getUserConfig() {
   return {
     language: store.get('language', app.getLocale ? app.getLocale().split('-')[0] : 'en'),
-    darkMode: store.get('darkMode', 'system')
+    darkMode: store.get('darkMode', 'system'),
+    showSwitch2Games: store.get('showSwitch2Games', false)
   }
 }
 

@@ -19,5 +19,13 @@ contextBridge.exposeInMainWorld('electronAPI', {
   getFavorites: () => ipcRenderer.invoke('get-favorites'),
   setFavorites: (favorites: string[]) => ipcRenderer.invoke('set-favorites', favorites),
   addFavorite: (game: string) => ipcRenderer.invoke('add-favorite', game),
-  removeFavorite: (game: string) => ipcRenderer.invoke('remove-favorite', game)
+  removeFavorite: (game: string) => ipcRenderer.invoke('remove-favorite', game),
+
+  // Show Switch2Games
+  setShowSwitch2Games: (show: boolean) => ipcRenderer.invoke('set-show-switch2games', show),
+  onShowSwitch2GamesChanged: (callback: (show: boolean) => void) => {
+    ipcRenderer.on('showSwitch2Games-changed', (_event, show) => callback(show))
+  }
+
+
 })
