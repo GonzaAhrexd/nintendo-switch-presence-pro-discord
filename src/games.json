@@ -166,12 +166,18 @@
   { "name": "Persona 5 Royal", "img": "p5r", "franchise": "Persona", "console": "sw1" },
   { "name": "Persona 5 Strikers", "img": "p5s", "franchise": "Persona", "console": "sw1" },
 
-    { "name": "Monster Hunter Generations Ultimate", "img": "mhgu", "franchise": "Monster Hunter", "console": "sw1" },
+  { "name": "Monster Hunter Generations Ultimate", "img": "mhgu", "franchise": "Monster Hunter", "console": "sw1" },
   { "name": "Monster Hunter Rise", "img": "mhrise", "franchise": "Monster Hunter", "console": "sw1" },
   { "name": "Monster Hunter Stories", "img": "mhstories", "franchise": "Monster Hunter", "console": "sw1" },
   { "name": "Monster Hunter Stories 2: Wings of Ruin", "img": "mhstories2", "franchise": "Monster Hunter", "console": "sw1" },
 
-    { "name": "Nier Automata: The End of Yorha Edition", "img": "nierauto", "franchise": "Nier", "console": "sw1" },
-    {"name": "Hogwarts Legacy", "img": "hogwarts", "franchise": "Harry Potter", "console": "sw1" }
+  { "name": "Nier Automata: The End of Yorha Edition", "img": "nierauto", "franchise": "Nier", "console": "sw1" },
+  {"name": "Hogwarts Legacy", "img": "hogwarts", "franchise": "Harry Potter", "console": "sw1" },
 
+  { "name": "The Witcher 3: Wild Hunt – Complete Edition", "img": "witcher3", "franchise": "The Witcher", "console": "sw1" },
+  { "name": "Cuphead", "img": "cuphead", "franchise": "Cuphead", "console": "sw1" },
+  { "name": "Octopath Traveler", "img": "octopath", "franchise": "Octopath Traveler", "console": "sw1" },
+  { "name": "Octopath Traveler II", "img": "octopath2", "franchise": "Octopath Traveler", "console": "sw1" },
+  { "name": "Dragon Quest XI S: Echoes of an Elusive Age – Definitive Edition", "img": "dq11s", "franchise": "Dragon Quest", "console": "sw1" },
+  { "name": "Dragon Quest Treasures", "img": "dqtreasures", "franchise": "Dragon Quest", "console": "sw1" }
 ]
