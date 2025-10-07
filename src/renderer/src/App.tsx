@@ -7,7 +7,6 @@ import AllGames from './components/AllGames/AllGames'
 import FavoriteGames from './components/FavoriteGames/FavoriteGames'
 
 function App(): React.JSX.Element {
-  const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
 
   const [activeTab, setActiveTab] = useState(0)
   const [darkMode, setDarkMode] = useState(null)

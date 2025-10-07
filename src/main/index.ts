@@ -120,7 +120,7 @@ function createWindow(): void {
 ipcMain.handle('get-user-config', () => {
   return getUserConfig()
 })
-
+// @ts-ignore
 ipcMain.handle('set-language', (event, language: string) => {
   store.set('language', language)
   if (mainWindow) mainWindow.webContents.send('language-changed', language)
@@ -140,6 +140,7 @@ let img: string
 let idle: number
 
 // Executes when game data is recieved
+// @ts-ignore
 ipcMain.on('game', (e, game, status, customGame) => {
   console.log("[IPC] Evento 'game' recibido:", { game, status, customGame })
   if (status === '') desc = 'Online'
@@ -150,6 +151,7 @@ ipcMain.on('game', (e, game, status, customGame) => {
 })
 
 // Executes when idle data is recieved
+// @ts-ignore
 ipcMain.on('idle', (e, clicks) => {
   idle = clicks
   setIdle()

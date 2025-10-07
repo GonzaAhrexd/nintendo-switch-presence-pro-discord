@@ -90,7 +90,6 @@ const Setting: React.FC = () => {
   };
 
   // Utilidad para clases según modo
-  const mode = darkMode ? 'dark' : 'light';
   const bg = darkMode ? 'bg-zinc-900' : 'bg-white';
   const border = darkMode ? 'border-zinc-700' : 'border-zinc-200';
   const textMain = darkMode ? 'text-zinc-100' : 'text-zinc-800';

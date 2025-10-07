@@ -20,6 +20,20 @@
     "build:mac": "electron-vite build && electron-builder --mac",
     "build:linux": "electron-vite build && electron-builder --linux"
   },
+  "build": {
+  "asar": true,
+  "appId": "nintendoswitchpresence.discord",
+  "productName": "Nintendo Switch Presence Pro",
+  "files": [
+  "dist/**/*",          
+  "out/**/*",           
+  "package.json",
+  "public/games/**/*"  
+],
+  "win": {
+    "icon": "build/icon.ico"
+  }
+},
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
