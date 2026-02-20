@@ -46,7 +46,7 @@ function App(): React.JSX.Element {
 
   return (
     <>
-      <div className={`min-h-screen max-w-screen w-screen overflow-x-hidden ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
+      <div className={`min-h-screen max-w-[99vw] w-screen overflow-x-hidden ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
         {language}
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} darkMode={darkMode} language={language}/>
         <div className={`pt-14`}>

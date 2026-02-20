@@ -155,7 +155,7 @@ const AllGames: React.FC<AllGamesProps> = ({ darkMode, language, games, translat
           </select>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-4 w-full">
           {filteredGames.map((game) => (
             <div
               key={game.name}
@@ -218,7 +218,7 @@ const AllGames: React.FC<AllGamesProps> = ({ darkMode, language, games, translat
                 >
                   {game.img ? (
                     <img
-                      src={`/games/${game.img}.png`}
+                      src={`./games/${game.img}.png`}
                       alt={game.name}
                       className="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-300"
                       onError={(e) => (e.currentTarget.style.display = 'none')}

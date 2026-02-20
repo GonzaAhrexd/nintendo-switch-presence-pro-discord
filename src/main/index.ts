@@ -71,10 +71,9 @@ let window
 let mainWindow: BrowserWindow | null = null
 function createWindow(): void {
 
-  const path = __dirname
+  // const path = __dirname
 
-  console.log(path)
-
+ 
   mainWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
@@ -90,7 +89,7 @@ function createWindow(): void {
 
   mainWindow.on('ready-to-show', () => {
     mainWindow!.show()
-    mainWindow?.webContents.openDevTools({ mode: 'detach' })
+    // mainWindow?.webContents.openDevTools({ mode: 'detach' })
   })
 
   mainWindow.webContents.setWindowOpenHandler((details) => {
@@ -159,7 +158,6 @@ ipcMain.on('idle', (e, clicks) => {
 
 // Sets the presence to idle
 function setIdle() {
-  console.log('Should work')
   if (idle === 16)
     return rpc.updatePresence({
       details: 'IDLE',
