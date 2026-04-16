@@ -84,7 +84,7 @@
   { "name": "Pokémon Scarlet", "img": "pkmnscarlet", "franchise": "Pokémon", "console": "sw1" },
   { "name": "Pokémon Violet", "img": "pkmnviolet", "franchise": "Pokémon", "console": "sw1" },
   { "name": "Pokémon Legends: Z-A", "img": "pkmnza", "franchise": "Pokémon", "console": "sw1" },
-  { "name": "Pokémon Champions", "img": "pkmnchampions", "franchise": "Pokémon", "console": "sw1" },
+  { "name": "Pokémon Champions", "img": "pkmchampions", "franchise": "Pokémon", "console": "sw1" },
   { "name": "Pokémon Pokopia", "img": "pkmnpokopia", "franchise": "Pokémon", "console": "sw2" },
   { "name": "Pokémon Mystery Dungeon: Rescue Team DX", "img": "pkmnrescue", "franchise": "Pokémon", "console": "sw1" },
   { "name": "New Pokémon Snap", "img": "pkmnsnap", "franchise": "Pokémon", "console": "sw1" },
